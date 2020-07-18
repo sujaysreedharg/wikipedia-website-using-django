@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %} {% block title %} Search {%endblock %}
+{% block body %}
+<h1>Related Pages for your search {{q}}</h1>
+
+<ul>
+  {% for i in entries %}
+    {% if q in i %}
+      <a href="{% url 'entry' i %}"><li>{{ i }}</li></a>
+    {% endif %}
+  {% endfor %}
+
+</ul>
+
+{% endblock %}
