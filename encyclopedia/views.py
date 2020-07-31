@@ -3,7 +3,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 from markdown2 import Markdown
 from django.urls import reverse
 from random import randint
-import random
+
 
 
 from . import util
