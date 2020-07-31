@@ -3,3 +3,4 @@ gunicorn
 django-heroku
 markdown2
 random
+randint
